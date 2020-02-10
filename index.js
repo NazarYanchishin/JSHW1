@@ -10,13 +10,13 @@ console.log("мінімальна ціна =", minPrice);
 const sum = cola + meat + apple;
 console.log("сума цін =", sum);
 
-let floorCola = Math.floor(cola);
+const floorCola = Math.floor(cola);
 console.log("ціла ціна коли =",floorCola);
 
-let floorMeat = Math.floor(meat);
+const floorMeat = Math.floor(meat);
 console.log("ціла ціна курки  =",floorMeat);
 
-let floorApple = Math.floor(apple);
+const floorApple = Math.floor(apple);
 console.log("ціла ціна яблука =",floorApple);
 
 const entireSum = floorApple + floorMeat + floorCola;
@@ -40,16 +40,16 @@ console.log( "решта якщо купити всі продукти =",zdacha
 console.log( "окуруглення до двох знаків :", "\n кола =",cola.toFixed(2),"\n мясо=",meat.toFixed(2)  , "\n яблуко =",apple.toFixed(2) );
 
 
-let dis = Math.trunc(Math.random() * 100);
-let priceDis = sum /  100 * dis ;
+const dis = Math.trunc(Math.random() * 100);
+const priceDis = sum /  100 * dis ;
 console.log("ваша знижка =",dis, "%", "або", priceDis.toFixed(2), "grn");
-let priceWithDis = sum - priceDis;
+const priceWithDis = sum - priceDis;
 console.log("до оплати ",priceWithDis.toFixed(2));
 
 const cost = sum/2;
 console.log('прибуток за планом',cost.toFixed(2),"grn");
 console.log("втрачена вигода",priceDis.toFixed(2) ,"grn");
-let finalCost = cost - priceDis;
+const finalCost = cost - priceDis;
 console.log( "прибуток",finalCost.toFixed(2), 'grn');
 
 
